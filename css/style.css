@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 13.3333vw;
+}
+body {
+  position: relative;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0.15rem;
+}
+.app table {
+  table-layout: fixed;
+  margin: 0 auto;
+}
+.showImgName {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.15rem;
+  position: relative;
+}
+.showImgName img {
+  width: 1.2rem;
+  height: 1.6rem;
+}
+.showImgName div {
+  margin: -0.2rem 0;
+  font-size: 0.15rem;
+}
+.showImgName .maozi {
+  position: absolute;
+  top: 0.2rem;
+  left: -0.014rem;
+  animation: fanzhuan 0.1s 1s linear forwards;
+  display: none;
+}
+@keyframes fanzhuan {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+.showImgName .maozi img {
+  width: 1.22rem;
+  height: 0.66rem;
+}
+.maozifanzhuan {
+  transform: rotateY(180deg);
+  animation: maozifanhuan 0.5s linear forwards;
+}
+@keyframes maozifanhuan {
+  0% {
+    transform: translateY(2rem) rotateY(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem) rotateY(180deg);
+    opacity: 1;
+  }
+}
