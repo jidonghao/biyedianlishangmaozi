@@ -38,7 +38,7 @@ for (let j = 0; j < 8; j++) {
     showImgDiv[j].style.display = "inline-block"
 }
 
-let i = 7
+let i = 8
 let timer = setInterval(() => {
     for (let j = 0; j < 8; j++) {
         showImgDiv[j].style.display = "none"
