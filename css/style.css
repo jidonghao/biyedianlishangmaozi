@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 .showImgName {
-  display: inline-block;
+  display: none;
   text-align: center;
   margin: 0 0.15rem;
   position: relative;
@@ -35,8 +35,8 @@ body {
   position: absolute;
   top: 0.2rem;
   left: -0.014rem;
-  animation: fanzhuan 0.1s 1s linear forwards;
   display: none;
+  animation: fanzhuan 0.1s 1s linear forwards;
 }
 @keyframes fanzhuan {
   0% {

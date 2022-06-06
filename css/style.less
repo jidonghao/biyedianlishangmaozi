@@ -19,7 +19,7 @@ body{
     }
 }
 .showImgName{
-    display: inline-block;
+    display: none;
     text-align: center;
     margin: 0 0.15rem;
     position: relative;
@@ -36,15 +36,18 @@ body{
         position: absolute;
         top: 0.2rem;
         left: -0.014rem;
-        animation: fanzhuan 0.1s 1s linear forwards;
         display: none;
+        animation: fanzhuan 0.1s 1s linear forwards;
+        
         @keyframes fanzhuan {
             0%{
                 transform: rotateY(0deg);
+                // display: block;
             }
             100%{
                 
                 transform: rotateY(180deg);
+                // display: block;
             }
         }
         img{
