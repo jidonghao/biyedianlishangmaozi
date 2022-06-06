@@ -1,13 +1,4 @@
 let $maozi = document.querySelectorAll(".maozi")
-// console.log($maozi)
-// 循环给加延迟
-// for (let i = 0; i < $maozi.length; i++) {
-
-//     console.log($maozi[i])
-//     $maozi[i].style.display = "none"
-//     // $maozi[i].style.animationDelay = Number(1.5 * i) + "s"
-// }
-
 
 function delayShow() {
     let j = 0
@@ -45,7 +36,7 @@ let timer = setInterval(() => {
     }
 
     // 刷新一下页面开始切换下一页
-    console.log("切换下一页")
+    // console.log("切换下一页")
     app.style.display = "none"
     for (let o = 0; o < $maozi.length; o++) {
         $maozi[o].style.display = "none"
@@ -55,7 +46,7 @@ let timer = setInterval(() => {
 
     if (i >= length)
         clearInterval(timer)
-    console.log("定时器开始执行")
+    // console.log("定时器开始执行")
     for (let j = 0; j < 8; j++) {
         if ((j + i) >= length) {
             clearInterval(timer)
